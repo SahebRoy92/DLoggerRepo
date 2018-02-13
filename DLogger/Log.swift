@@ -10,7 +10,7 @@ import Foundation
 import MBProgressHUD
 
 public class Log{
-    public func dLog(_ str : String){
+    public class func dLog(_ str : String){
         let topView = UIApplication.shared.keyWindow?.rootViewController?.view
         print("Cocoapod --- >>\(str)")
         MBProgressHUD.showAdded(to: topView!, animated: true)
